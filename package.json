@@ -9,13 +9,7 @@
     "type": "git",
     "url": "https://github.com/umami-software/umami.git"
   },
-  "engines": {
-    "npm": "please-use-pnpm",
-    "yarn": "please-use-pnpm",
-    "pnpm": ">= 10.0.0"
-  },
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "dev": "next dev",
     "dev-turbo": "next dev -p 3001 --turbopack",
     "build": "npm-run-all check-env build-db check-db build-tracker build-geo build-app",
